@@ -3,8 +3,8 @@
 
 [handlebras](http://handlebarsjs.com/) 官方文档的中文版
 
-中文版：[http://www.handlebarsjs.org](http://www.handlebarsjs.org/)
-英文版：[http://www.handlebarsjs.com](http://www.handlebarsjs.com/)
+- 中文版：[http://www.handlebarsjs.org](http://www.handlebarsjs.org/)
+- 英文版：[http://www.handlebarsjs.com](http://www.handlebarsjs.com/)
 
 ## 直接提交 [issues](https://github.com/nimojs/handlebarsjs.org/issues) 报告翻译错误
 打开 [issues](https://github.com/nimojs/handlebarsjs.org/issues/new) ，填写翻译错误对应的 URL 地址、错误文字、正确文字，原因。
@@ -34,4 +34,4 @@ Handlebars 模板看起来很像 HTML ，Handlebars 表达式嵌入在 HTML 中�
 html = html.replace(/<!---([^-]+)-->/g,'$1')
 ```
 
-可查看 [/posts/index.md](/posts/index.md) 的内容以理解 `<!---<tag>-->` 的用法。
+可查看 [/posts/index.md](https://github.com/nimojs/handlebarsjs.org/edit/master/posts/index.md) 的源码以理解 `<!---<tag>-->` 的用法。
