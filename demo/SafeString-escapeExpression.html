@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars 中文网：{ helper 的数据安全性 }</title>
+    <link rel="stylesheet" href="../static/css/demo.css">
+    <script src="../../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../../static/js/handlebars-v3.0.0.js"></script>
+    <script src="../../static/js/demo.js"></script>
+</head>
+<body>
+    <div class="ui-header">
+        <h1 class="ui-header-title">
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ helper 的数据安全性 }
+            <span class="ui-header-more"></span>
+        </h1>
+    </div>
+    <div class="ui-box"><!-- ui-box Start -->
+      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href="../expressions.html#SafeString-escapeExpression">使用 helper 输出链接</a>
+
+<p>&#x4F7F;&#x7528; <code>escapeExpression</code> &#x914D;&#x5408; <code>SafeString</code> &#x8F93;&#x51FA;&#x94FE;&#x63A5;</p>
+<!-- 模板 -->
+<script class="show" id="source" type="text/x-handlebars-template">
+
+{{{link story}}}
+
+</script>
+
+
+<!-- 数据 -->
+<script class="show json-format-error" id="data" type="text/json">
+
+{
+    "story": {
+        "link": "http://handlebarsjs.org/demo/SafeString-escapeExpression.html",
+        "text": "字符转义和数据安全性 <span onclick='javascript:alert(1);'>点击我</span>"
+    }
+}
+
+</script>        
+
+<!-- helper实现 -->
+<script class="show" id="helper">
+
+Handlebars.registerHelper('link', function(object) {
+    // 使用 escapeExpression 进行 HTML 转义防止内容中存在 js 注入等不安全信息
+    var url = Handlebars.escapeExpression(object.url);
+    var text = Handlebars.escapeExpression(object.text);
+    // var text = object.text; // 将此行取消注释以查看被注入 js 的结果
+
+    // 输出时使用 SafeString ，确保 <a 不会被转义为 &lt;a
+    return new Handlebars.SafeString(
+    "<a href='" + url + "'>" + text + "</a>"
+    );
+});
+
+</script>
+<!-- 渲染结果字符 -->
+<div class="expandingArea">
+    <textarea class="show" id="result"></textarea>
+    <pre id="expandingPre"><span></span><br></pre>
+</div>
+
+<div class="ui-dom" id="dom"></div>
+    </div><!-- ui-box End -->
+    <div class="ui-error" id="showerror"></div>
+</body>
+</html>

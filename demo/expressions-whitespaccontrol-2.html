@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars 中文网：{ 控制换行和空格-不删除空格 }</title>
+    <link rel="stylesheet" href="../static/css/demo.css">
+    <script src="../../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../../static/js/handlebars-v3.0.0.js"></script>
+    <script src="../../static/js/demo.js"></script>
+</head>
+<body>
+    <div class="ui-header">
+        <h1 class="ui-header-title">
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ 控制换行和空格-不删除空格 }
+            <span class="ui-header-more"></span>
+        </h1>
+    </div>
+    <div class="ui-box"><!-- ui-box Start -->
+      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href="../expressions.html#expressions-whitespaccontrol-2.html">控制空格</a>
+
+<p><a href="expressions-whitespaccontrol-1.html" target="_blank">&#x5220;&#x9664;&#x7A7A;&#x683C;&#x793A;&#x4F8B;</a></p>
+<!-- 模板 -->
+<script class="show" id="source" type="text/x-handlebars-template">
+
+{{#each nav}}
+  <a href="{{url}}">
+    {{#if test}}
+      {{title}}
+    {{else}}
+      Empty
+    {{/if}}
+  </a>
+{{~/each}}
+
+</script>
+
+<!-- 数据 -->
+<script class="show json-format-error" id="data" type="text/json">
+
+{
+  "nav": [
+    {"url": "foo", "test": true, "title": "bar"},
+    {"url": "bar"}
+  ]
+}
+
+</script>        
+
+<!-- helper实现 -->
+<script class="show" id="helper">
+
+
+</script>
+<!-- 渲染结果字符 -->
+<div class="expandingArea">
+    <textarea class="show" id="result"></textarea>
+    <pre id="expandingPre"><span></span><br></pre>
+</div>
+
+<div class="ui-dom" id="dom"></div>
+    </div><!-- ui-box End -->
+    <div class="ui-error" id="showerror"></div>
+</body>
+</html>

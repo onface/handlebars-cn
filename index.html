@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Handlebars 中文网：轻逻辑语义化的模板引擎</title>
+    <meta charset="UTF-8">
+    <link href="static/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/sunburst.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/site.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/images/favicon.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        <a href="index.html">
+          <img alt="Handlebars 中文网：轻逻辑语义化的模板引擎" src="images/handlebars_logo.png"/>
+        </a>
+      </div>
+      <div id="contents">
+        <a href="http://www.devswag.com/collections/handlebars" id="callout">
+          <img alt="Buy Handlebars swag on DevSwag!" src="images/handlebars-devswag.png"/>
+        </a>
+        
+<div id="intro">
+
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Handlebars &#x8F7B;&#x677E;&#x7684;&#x521B;&#x5EFA;&#x8BED;&#x4E49;&#x5316;&#x6A21;&#x677F;&#x3002;<br>Handlebars &#x517C;&#x5BB9; Mustache &#x6A21;&#x677F;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; Handlebars &#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Mustache &#x6A21;&#x677F;&#x3002;</p>
+<p></p></div>
+<a class="download" href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v3.0.1.js" target="_blank">Download: 3.0.1</a>
+<a class="download-runtime" href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars.runtime-v3.0.1.js" target="_blank">Download: runtime-3.0.1</a><p></p>
+<h2>Getting Started</h2>
+<!-- Start .contents-->
+<dic class="contents">
+<div class="bullet">
+<p>Handlebars &#x6A21;&#x677F;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF; HTML &#xFF0C;Handlebars &#x8868;&#x8FBE;&#x5F0F;&#x5D4C;&#x5165;&#x5728; HTML &#x4E2D;&#x3002;</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>
+    </span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>Handlebars &#x8868;&#x8FBE;&#x5F0F;&#x4EE5; <code>{{</code>&#x5C5E;&#x6027;&#x540D;<code>}}</code> &#x7684;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x6570;&#x636E;&#x3002;</p>
+<p><a href="expressions.html" class="more-info" target="_blank">&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF1A;&#x8868;&#x8FBE;&#x5F0F;</a></p>
+</div>
+<p><a name="index-1.html" target="_blank"></a></p>
+<div class="bullet">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728; HTML &#x4E2D;&#x4F7F;&#x7528; <code>&lt;script&gt;</code> &#x6807;&#x7B7E;&#x5B58;&#x653E;&#x6A21;&#x677F;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;entry-template&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/x-handlebars-template&quot;</span>&gt;</span><span class="handlebars"><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>
+      </span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+</div>
+<div class="bullet">
+<p>&#x5728; JavaScript &#x4E2D;&#x83B7;&#x53D6; <code>&lt;scrit&gt;</code> &#x4E2D;&#x7684;&#x6A21;&#x677F;&#x5E76;&#x7F16;&#x8BD1;&#x6A21;&#x677F;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> source   = $(<span class="hljs-string">&quot;#entry-template&quot;</span>).html();
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">template</span> = <span class="hljs-type">Handlebars</span>.compile(source);
+</code></pre>
+<p><a href="demo/index-1.html" target="_blank">&#x793A;&#x4F8B;</a></p>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x9884;&#x7F16;&#x8BD1;&#x4F60;&#x7684;&#x6A21;&#x677F;&#x3002;&#x9884;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;&#x53EA;&#x9700;&#x4F7F;&#x7528; <a href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars.runtime-v3.0.0.js" target="_blank">handlebars.runtime.js</a> &#x6E32;&#x67D3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x5E76;&#x51CF;&#x5C11;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x3002;&#x5728;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x4E2D;&#x8FD9;&#x6837;&#x505A;&#x975E;&#x5E38;&#x6709;&#x610F;&#x4E49;&#xFF08;&#x56E0;&#x4E3A;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x7684;&#x6027;&#x80FD;&#x548C;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x90FD;&#x6CA1;&#x6709;PC&#x597D;&#xFF09;&#x3002;</p>
+<p><a href="#" class="more-info" target="_blank">&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF1A;&#x9884;&#x7F16;&#x8BD1;</a></p>
+</div>
+</div>
+<!-- End .contents-->
+        <a class="issue-tracker" href="https://github.com/nimojs/handlebarsjs.org/issues">
+          发现翻译错误？告诉我们。
+        </a>
+      </div>
+    </div>
+    <div id="credits"></div>
+    <a href="http://github.com/nimojs/handlebarsjs.org/" id="github">
+      <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" />
+    </a>
+  </body>
+</html>

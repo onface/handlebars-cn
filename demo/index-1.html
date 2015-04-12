@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars 中文网：{ Handlebars 中文网：轻逻辑语义化的模板引擎 }</title>
+    <link rel="stylesheet" href="../static/css/demo.css">
+    <script src="../../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../../static/js/handlebars-v3.0.0.js"></script>
+    <script src="../../static/js/demo.js"></script>
+</head>
+<body>
+    <div class="ui-header">
+        <h1 class="ui-header-title">
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ Handlebars 中文网：轻逻辑语义化的模板引擎 }
+            <span class="ui-header-more"></span>
+        </h1>
+    </div>
+    <div class="ui-box"><!-- ui-box Start -->
+      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href=""></a>
+
+<script id="entry-template" type="text/x-handlebars-template" class="show">
+<!-- 模板 -->
+<div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+</div>
+</script>
+
+<script class="show">
+// 编译模板
+var source   = $("#entry-template").html();
+var template = Handlebars.compile(source);
+</script>
+
+<script class="show">
+// 数据
+var data = {
+    "title": "Handlebars 中文网",
+    "body": "用 Handlebars 抛弃低效率的 HTML 拼接吧！"
+}
+// 渲染
+$(function () {
+    var html = template(data);
+    $("#result,#dom").html(html);
+
+    // 通过 pre 让 textarea 高度自适应，与 Handlebars 无关
+    $("#expandingPre").html(Handlebars.escapeExpression(html));
+})
+</script>
+
+
+<!-- 渲染结果字符 -->
+<div class="expandingArea">
+    <textarea class="show" id="result"></textarea>
+    <pre id="expandingPre"><span></span><br></pre>
+</div>
+
+<div class="ui-dom" id="dom"></div>
+    </div><!-- ui-box End -->
+    <div class="ui-error" id="showerror"></div>
+</body>
+</html>

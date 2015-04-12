@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars 中文网：{ 表达式的属性包含特殊字符时的使用方法 }</title>
+    <link rel="stylesheet" href="../static/css/demo.css">
+    <script src="../../static/js/jquery-1.11.1.min.js"></script>
+    <script src="../../static/js/handlebars-v3.0.0.js"></script>
+    <script src="../../static/js/demo.js"></script>
+</head>
+<body>
+    <div class="ui-header">
+        <h1 class="ui-header-title">
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ 表达式的属性包含特殊字符时的使用方法 }
+            <span class="ui-header-more"></span>
+        </h1>
+    </div>
+    <div class="ui-box"><!-- ui-box Start -->
+      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href="../expressions.html#property-not-a-valid-identifier.html">如果你的表达式的标识符是特殊字符，可以使用 [ 和 ] 包裹标识符</a>
+
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x662F;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; [ &#x548C; ] &#x5305;&#x88F9;&#x6807;&#x8BC6;&#x7B26;</p>
+<!-- 模板 -->
+<script class="show" id="source" type="text/x-handlebars-template">
+
+{{#each articles.[1].[#comments]}}
+  <h1>{{subject}}</h1>
+  <div>
+    {{body}}
+  </div>
+{{/each}}
+
+</script>
+
+<p>&#xFF08;&#x6CE8;&#x610F;&#xFF1A;&#x4E3A;&#x4E86;&#x67E5;&#x770B;&#x65B9;&#x4FBF;&#xFF0C;&#x6B64;&#x793A;&#x4F8B;&#x5C06; <code>10</code> &#x6539;&#x4E3A; <code>1</code> &#xFF09;</p>
+<!-- 数据 -->
+<script class="show json-format-error" id="data" type="text/json">
+
+{
+    "articles": [
+        {
+            "#comments": [
+                {
+                    "subject": "1-1 标题",
+                    "body": "内容"
+                },
+                {
+                    "subject": "1-2 标题",
+                    "body": "内容"
+                }
+            ]
+        },
+        {
+            "#comments": [
+                {
+                    "subject": "2-1 标题",
+                    "body": "内容"
+                },
+                {
+                    "subject": "2-2 标题",
+                    "body": "内容"
+                }
+            ]
+        }
+    ]
+}
+
+</script>        
+
+<!-- helper实现 -->
+<script class="show" id="helper">
+
+
+</script>
+<!-- 渲染结果字符 -->
+<div class="expandingArea">
+    <textarea class="show" id="result"></textarea>
+    <pre id="expandingPre"><span></span><br></pre>
+</div>
+
+<div class="ui-dom" id="dom"></div>
+    </div><!-- ui-box End -->
+    <div class="ui-error" id="showerror"></div>
+</body>
+</html>
