@@ -1,7 +1,7 @@
 [Handlebars 中文网](http://www.handlebarsjs.org/)
 ================
 
-<a href="http://www.handlebarsjs.org" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7108689/967b52d6-e1c0-11e4-8da1-0dc5ec4e4346.png" width="700" style="border-radius:3px;box-shadow:0px 0px 20px rgba(111,111,111,0.6)" /></a>
+<a href="http://www.handlebarsjs.org" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7113820/4d7c487a-e20a-11e4-9335-53552a711137.jpg"/></a>
 
 [handlebras](http://handlebarsjs.com/) 官方文档的中文版
 
