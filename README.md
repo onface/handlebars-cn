@@ -1,6 +1,8 @@
 [Handlebars 中文网](http://www.handlebarsjs.org/)
 ================
 
+<a href="http://www.handlebarsjs.org" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7108689/967b52d6-e1c0-11e4-8da1-0dc5ec4e4346.png" width="700" style="border-radius:3px;box-shadow:0px 0px 20px rgba(111,111,111,0.6)" /></a>
+
 [handlebras](http://handlebarsjs.com/) 官方文档的中文版
 
 - 中文版：[http://www.handlebarsjs.org](http://www.handlebarsjs.org/)
