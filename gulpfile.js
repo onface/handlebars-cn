@@ -7,7 +7,6 @@ var markdown = require('gulp-markdown')
 var tap = require('gulp-tap')
 var gutil = require('gulp-util')
 var cheerio = require('gulp-cheerio')
-var livereload = require('gulp-livereload')
 var highlight = require('highlight.js')
 
 var fs = require('fs')
@@ -17,7 +16,6 @@ var path  = require('path')
 var handlebarshelperis = require('handlebars-helper-is')
 handlebarshelperis(Handlebars)
 var server = require('gulp-server-livereload')
-// method
 
 // .replace(rStringToRegExp,'\\$1'))
 // "[]" => "\[\]"
@@ -72,7 +70,7 @@ Handlebars.registerHelper('-is', function (a, b, yes, no) {
     @dist {string} - 相当于 gulp.dest(dist) 中的 dist
 */
 
-var compileMD = function (paths) {    
+var compileMD = function (paths) {
     gulp.src(paths)
         .pipe(markdown({
             highlight: function (code) {

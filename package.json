@@ -1,6 +1,6 @@
 {
   "name": "handlebarsjs.org",
-  "version": "0.0.1",
+  "version": "3.0.1",
   "description": "handlebars 中文网",
   "main": "gulpfile.js",
   "scripts": {
@@ -20,11 +20,8 @@
   },
   "homepage": "https://github.com/nimojs/handlebarsjs.org",
   "devDependencies": {
-    "cheerio": "^0.19.0",
-    "deep-equal": "^1.0.0",
     "gulp": "^3.8.11",
     "gulp-cheerio": "^0.6.2",
-    "gulp-livereload": "^3.8.0",
     "gulp-markdown": "^1.0.0",
     "gulp-server-livereload": "^1.2.1",
     "gulp-tap": "^0.1.3",
