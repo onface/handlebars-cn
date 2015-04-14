@@ -391,7 +391,9 @@ h1, h2, h3, h4, h5, h6{
   font-size:0.5em;
   line-height: 4em;
 }
-
+.ui-header-more iframe{
+  position: relative;top:16px;
+}
 .ui-box{
   padding-left: 2em;
   padding-right: 2em;
