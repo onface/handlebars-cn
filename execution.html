@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Handlebars 中文网：轻逻辑语义化的模板引擎</title>
+    <meta charset="UTF-8">
+    <link href="static/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/sunburst.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/site.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/images/favicon.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        <a href="index.html">
+          <img alt="Handlebars 中文网：轻逻辑语义化的模板引擎" src="static/images/handlebars_logo.png"/>
+        </a>
+      </div>
+      <div id="contents">
+        <a href="http://www.devswag.com/collections/handlebars" id="callout">
+          <img alt="Buy Handlebars swag on DevSwag!" src="static/images/handlebars-devswag.png"/>
+        </a>
+        
+<div id="intro">
+<p>&#x4F20;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x6267;&#x884C; Handlebars &#x8FD4;&#x56DE; &#x6E32;&#x67D3;&#x540E;&#x7684; HTML&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-keyword">var</span> source   = $(<span class="hljs-string">&quot;#entry-template&quot;</span>).html();
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">template</span> = <span class="hljs-type">Handlebars</span>.compile(source);
+
+<span class="hljs-keyword">var</span> context = {title: <span class="hljs-string">&quot;My New Post&quot;</span>, body: <span class="hljs-string">&quot;This is my first post!&quot;</span>}
+<span class="hljs-keyword">var</span> html    = <span class="hljs-keyword">template</span>(context);
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;entry&quot;</span>&gt;
+  &lt;h1&gt;My New Post&lt;/h1&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;body&quot;</span>&gt;
+    This <span class="hljs-keyword">is</span> <span class="hljs-keyword">my</span> <span class="hljs-keyword">first</span> post!
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<p><a href="demo/execution-1.html" target="_blank">&#x793A;&#x4F8B;</a></p>
+</div>
+<h2>&#x9009;&#x9879;</h2>
+<p>&#x8FD9;&#x91CC;&#x7684; <code>template()</code> &#x5141;&#x8BB8;&#x4F20;&#x5165;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x9009;&#x9879; </p>
+<p>The template function can be passed an options object as the second parameter which allows for customization:</p>
+<ul>
+<li><code>data</code> Pass in an object to define custom <code>@variable</code> private variables.</li>
+<li><code>helpers</code> Pass in to provide custom helpers in addition to the globally defined helpers. 
+Values defined in this object will replace any values defined in the global object for the duration of the template execution.</li>
+<li><code>partials</code> Pass in to provide custom partials in addition to the globally defined partials. 
+Values defined in this object will replace any values defined in the global object for the duration of the template execution.</li>
+</ul>
+<!-- End .contents-->
+        <a class="issue-tracker" href="https://github.com/nimojs/handlebarsjs.org/issues">
+          发现翻译错误？告诉我们。
+        </a>
+      </div>
+    </div>
+    <div id="credits"></div>
+    <a href="http://github.com/nimojs/handlebarsjs.org/" id="github">
+      <img alt="Fork me on GitHub" src="static/images/forkme_right_darkblue_121621.png" />
+    </a>
+  </body>
+</html>

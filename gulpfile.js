@@ -98,8 +98,8 @@ var compileMD = function (paths) {
             html = html.replace(/(href=['"][^"']+\.)md(['"])/g,'$1html$2')
             // 将 <!-- #hash_demo --> 转换为锚记 <a href="#hash_demo" name="hash_demo"></a>
             // oHash 用于防止 hash 重复
-            // 将 <!---<dic class="contents">--> 替换为 <dic class="contents"> (因为官方文档中存在一些带 class 的 div，此处需要兼容官方文档样式)
             html = html.replace(/<!---([^-]+)-->/g,'$1')
+            // 将 <!---<div class="contents">--> 替换为 <div class="contents"> (因为官方文档中存在一些带 class 的 div，此处需要兼容官方文档样式)            
             var oHash = {}
             html = html.replace(/<!--\s*#([^\s*]+)\s*-->/g, function () {
                 var hash = arguments[1];

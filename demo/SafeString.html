@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Handlebars 中文网：{ 深入理解JavaScript-replace }</title>
+    <title>Handlebars 中文网：{ HTML 转义配合 SafeString }</title>
     <link rel="stylesheet" href="../static/css/demo.css">
     <script src="../static/js/jquery-1.11.1.min.js"></script>
     <script src="../static/js/handlebars-v3.0.0.js"></script>
@@ -11,7 +11,7 @@
 <body>
     <div class="ui-header">
         <h1 class="ui-header-title">
-            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ 深入理解JavaScript-replace }
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ HTML 转义配合 SafeString }
             <span class="ui-header-more">
                 <iframe src="http://ghbtns.com/github-btn.html?user=nimojs&repo=handlebarsjs.org&type=watch&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="131" height="30"></iframe>
@@ -19,36 +19,28 @@
         </h1>
     </div>
     <div class="ui-box"><!-- ui-box Start -->
-      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href="../index.html">demo</a>
+      建议将此页面保存至本地修改相关代码以帮助理解，与本示例相关的文档：<a href="../index.html#SafeString">HTML 转义配合 SafeString</a>
 
 <!-- 模板 -->
 <script class="show" id="source" type="text/x-handlebars-template">
-{{#nimo}}
-{{.}} {{root.a.b.c}}
-{{/nimo}}
+{{{link "<em>html</em>" "http://www.handlebarsjs.org"}}}
 </script>
 
 <!-- 数据 -->
 <script class="show json-format-error" id="data" type="text/json">
-{
-    "a":{
-        "b":{
-            "c":"cccc"
-        }
-    },
-    "nimo": [
-        1
-        ,
-        2
-    ]
-}
+
 </script>        
 
 <!-- helper实现 -->
 <script class="show" id="helper">
-Handlebars.registerHelper('helper-name', function(obj) {
-    return 'output'
+Handlebars.registerHelper('link', function(text, url) {
+    // 将下行 text = ... 注释以查看未作安全性转义导致的文字倾斜效果
+    text = Handlebars.Utils.escapeExpression(text);
+    url  = Handlebars.Utils.escapeExpression(url);
 
+    var result = '<a href="' + url + '">' + text + '</a>';
+
+    return new Handlebars.SafeString(result);
 });
 </script>
 <!-- 渲染结果字符 -->

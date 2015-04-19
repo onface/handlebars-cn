@@ -12,12 +12,12 @@
     <div id="body">
       <div id="header">
         <a href="index.html">
-          <img alt="Handlebars 中文网：轻逻辑语义化的模板引擎" src="images/handlebars_logo.png"/>
+          <img alt="Handlebars 中文网：轻逻辑语义化的模板引擎" src="static/images/handlebars_logo.png"/>
         </a>
       </div>
       <div id="contents">
         <a href="http://www.devswag.com/collections/handlebars" id="callout">
-          <img alt="Buy Handlebars swag on DevSwag!" src="images/handlebars-devswag.png"/>
+          <img alt="Buy Handlebars swag on DevSwag!" src="static/images/handlebars-devswag.png"/>
         </a>
         
 <div id="intro">
@@ -26,10 +26,8 @@
 <p></p></div>
 <a class="download" href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v3.0.1.js" target="_blank">Download: 3.0.1</a>
 <a class="download-runtime" href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars.runtime-v3.0.1.js" target="_blank">Download: runtime-3.0.1</a><p></p>
-<h2>Getting Started</h2>
-<!-- Start .contents-->
-<dic class="contents">
-<div class="bullet">
+<h2>&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<dic class="contents"><!-- Start .contents-->
 <p>Handlebars &#x6A21;&#x677F;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF; HTML &#xFF0C;Handlebars &#x8868;&#x8FBE;&#x5F0F;&#x5D4C;&#x5165;&#x5728; HTML &#x4E2D;&#x3002;</p>
 <pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
@@ -39,10 +37,8 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
 </code></pre>
 <p>Handlebars &#x8868;&#x8FBE;&#x5F0F;&#x4EE5; <code>{{</code>&#x5C5E;&#x6027;&#x540D;<code>}}</code> &#x7684;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x6570;&#x636E;&#x3002;</p>
-<p><a href="expressions.html" class="more-info" target="_blank">&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF1A;&#x8868;&#x8FBE;&#x5F0F;</a></p>
-</div>
-<p><a name="index-1.html" target="_blank"></a></p>
-<div class="bullet">
+<p><a href="expressions.html" class="more-info" target="_blank">&#x9AD8;&#x7EA7;&#x6559;&#x7A0B;&#xFF1A;&#x8868;&#x8FBE;&#x5F0F;</a></p>
+<hr>
 <p>&#x4F60;&#x53EF;&#x4EE5;&#x5728; HTML &#x4E2D;&#x4F7F;&#x7528; <code>&lt;script&gt;</code> &#x6807;&#x7B7E;&#x5B58;&#x653E;&#x6A21;&#x677F;</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;entry-template&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/x-handlebars-template&quot;</span>&gt;</span><span class="handlebars"><span class="xml">
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
@@ -53,18 +49,237 @@
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
-</div>
-<div class="bullet">
+<hr>
 <p>&#x5728; JavaScript &#x4E2D;&#x83B7;&#x53D6; <code>&lt;scrit&gt;</code> &#x4E2D;&#x7684;&#x6A21;&#x677F;&#x5E76;&#x7F16;&#x8BD1;&#x6A21;&#x677F;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> source   = $(<span class="hljs-string">&quot;#entry-template&quot;</span>).html();
 <span class="hljs-keyword">var</span> <span class="hljs-keyword">template</span> = <span class="hljs-type">Handlebars</span>.compile(source);
 </code></pre>
-<p><a href="demo/index-1.html" target="_blank">&#x793A;&#x4F8B;</a></p>
+<div class="translator">
+<p>&#x5EFA;&#x8BAE;&#x521D;&#x5B66;&#x8005;&#x8DF3;&#x8FC7;&#x9884;&#x7F16;&#x8BD1;&#x7AE0;&#x8282;
+</div></p>
 <p>&#x8FD8;&#x53EF;&#x4EE5;&#x9884;&#x7F16;&#x8BD1;&#x4F60;&#x7684;&#x6A21;&#x677F;&#x3002;&#x9884;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6A21;&#x677F;&#x53EA;&#x9700;&#x4F7F;&#x7528; <a href="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars.runtime-v3.0.0.js" target="_blank">handlebars.runtime.js</a> &#x6E32;&#x67D3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x5E76;&#x51CF;&#x5C11;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x3002;&#x5728;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x4E2D;&#x8FD9;&#x6837;&#x505A;&#x975E;&#x5E38;&#x6709;&#x610F;&#x4E49;&#xFF08;&#x56E0;&#x4E3A;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x7684;&#x6027;&#x80FD;&#x548C;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x90FD;&#x6CA1;&#x6709;PC&#x597D;&#xFF09;&#x3002;</p>
-<p><a href="#" class="more-info" target="_blank">&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF1A;&#x9884;&#x7F16;&#x8BD1;</a></p>
-</div>
-</div>
-<!-- End .contents-->
+<p><a href="precompilation.html" class="more-info" target="_blank">&#x9AD8;&#x7EA7;&#x6559;&#x7A0B;&#xFF1A;&#x9884;&#x7F16;&#x8BD1;</a></p>
+<hr>
+<p>&#x4F20;&#x5165;&#x6570;&#x636E;&#xFF0C;&#x6267;&#x884C; Handlebars &#x8FD4;&#x56DE; &#x6E32;&#x67D3;&#x540E;&#x7684; HTML&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> source   = $(<span class="hljs-string">&quot;#entry-template&quot;</span>).html();
+<span class="hljs-keyword">var</span> <span class="hljs-keyword">template</span> = <span class="hljs-type">Handlebars</span>.compile(source);
+
+<span class="hljs-keyword">var</span> context = {title: <span class="hljs-string">&quot;My New Post&quot;</span>, body: <span class="hljs-string">&quot;This is my first post!&quot;</span>};
+<span class="hljs-keyword">var</span> html    = <span class="hljs-keyword">template</span>(context);
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;entry&quot;</span>&gt;
+  &lt;h1&gt;My New Post&lt;/h1&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;body&quot;</span>&gt;
+    This <span class="hljs-keyword">is</span> <span class="hljs-keyword">my</span> <span class="hljs-keyword">first</span> post!
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<p><a href="demo/execution-1.html" target="_blank">&#x793A;&#x4F8B;</a></p>
+<p><a href="execution.html" class="more-info" target="_blank">&#x9AD8;&#x7EA7;&#x6559;&#x7A0B;: &#x6267;&#x884C;</a></p>
+<h2>HTML &#x8F6C;&#x4E49;</h2>
+<p>&#x9047;&#x5230; HTML&#x6807;&#x7B7E;&#x65F6; Handlebars &#x4F1A;&#x8FD4;&#x56DE;&#x8F6C;&#x4E49;&#x540E;&#x7684; HTML&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x5E0C;&#x671B;&#x88AB;&#x8F6C;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>{{{</code></p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>
+    </span><span class="hljs-expression">{{{<span class="hljs-variable">body</span>}}</span><span class="xml">}
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-js">{
+  <span class="hljs-attribute">title</span>: <span class="hljs-string">&quot;All about &lt;p&gt; Tags&quot;</span>,
+  <span class="hljs-attribute">body</span>: <span class="hljs-string">&quot;&lt;p&gt;This is a post about &amp;lt;p&amp;gt; tags&lt;/p&gt;&quot;</span>
+}
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;entry&quot;</span>&gt;
+  &lt;h1&gt;All About &amp;lt;p&amp;gt; Tags&lt;/h1&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">&quot;body&quot;</span>&gt;
+    &lt;p&gt;This <span class="hljs-keyword">is</span> a post <span class="hljs-keyword">about</span> &amp;lt;p&amp;gt; tags&lt;/p&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<p><a href="#SafeString" name="SafeString" target="_blank"></a></p>
+<p>Handlebars &#x4E0D;&#x4F1A;&#x8F6C;&#x4E49; <code>Handlebars.SafeString</code> &#x3002;&#x5982;&#x679C;&#x4F60;&#x81EA;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A; helper &#x8FD4;&#x56DE; HTML &#x4EE3;&#x7801;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x8FD4;&#x56DE; <code>new Handlebars.SafeString(result)</code> &#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5BF9;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;</p>
+<pre><code class="lang-js"><span class="hljs-type">Handlebars</span>.registerHelper(&apos;link&apos;, function(text, url) {
+  text = <span class="hljs-type">Handlebars</span>.<span class="hljs-type">Utils</span>.escapeExpression(text);
+  url  = <span class="hljs-type">Handlebars</span>.<span class="hljs-type">Utils</span>.escapeExpression(url);
+
+  <span class="hljs-keyword">var</span> <span class="hljs-literal">result</span> = &apos;&lt;a href=<span class="hljs-string">&quot;&apos; + url + &apos;&quot;</span>&gt;&apos; + text + &apos;&lt;/a&gt;&apos;;
+
+  <span class="hljs-keyword">return</span> new <span class="hljs-type">Handlebars</span>.<span class="hljs-type">SafeString</span>(<span class="hljs-literal">result</span>);
+});
+</code></pre>
+<p><code>new Handlebars.SafeString()</code> &#x4F1A;&#x6807;&#x8BC6;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x662F;&#x201C;&#x5B89;&#x5168;&#x7684;&#x201D;&#xFF0C;&#x6240;&#x4EE5;&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x4F7F;&#x7528; <code>{{{</code> &#x3002;Handlebars &#x4E5F;&#x4E0D;&#x4F1A;&#x8F6C;&#x4E49;&#x3002;</p>
+<p><a href="demo/SafeString.html" target="_blank">&#x793A;&#x4F8B;</a></p>
+<h2>&#x5757;&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x5757;&#x8868;&#x8FBE;&#x5F0F;&#x5141;&#x8BB8;&#x4F60;&#x5B9A;&#x4E49;helper&#xFF0C;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;context&#xFF09;&#x8C03;&#x7528;&#x4E00;&#x6BB5;&#x6A21;&#x677F;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5217;&#x8868;&#x7684;helper&#xFF1A;</p>
+<p>&#x5FEB;&#x8868;&#x8FBE;&#x5F0F;&#x5141;&#x8BB8;&#x4F60;&#x81EA;&#x5B9A;&#x4E49; helper&#xFF0C;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x4E0A;&#x4E0B;&#x6587;&#x8C03;&#x7528;&#x6A21;&#x677F;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x5217;&#x8868;&#x7684;&#x5FEB;&#x8868;&#x8FBE;&#x5F0F;</p>
+<pre><code><span class="hljs-collection">{<span class="hljs-collection">{#list people}</span>}</span><span class="hljs-collection">{<span class="hljs-collection">{firstName}</span>}</span> <span class="hljs-collection">{<span class="hljs-collection">{lastName}</span>}</span><span class="hljs-collection">{<span class="hljs-collection">{/list}</span>}</span>
+</code></pre><p>&#x6E32;&#x67D3;&#x6570;&#x636E;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-js">{
+<span class="hljs-label">  people:</span> [
+    {<span class="hljs-string">firstName:</span> <span class="hljs-string">&quot;Yehuda&quot;</span>, <span class="hljs-string">lastName:</span> <span class="hljs-string">&quot;Katz&quot;</span>},
+    {<span class="hljs-string">firstName:</span> <span class="hljs-string">&quot;Carl&quot;</span>, <span class="hljs-string">lastName:</span> <span class="hljs-string">&quot;Lerche&quot;</span>},
+    {<span class="hljs-string">firstName:</span> <span class="hljs-string">&quot;Alan&quot;</span>, <span class="hljs-string">lastName:</span> <span class="hljs-string">&quot;Johnson&quot;</span>}
+  ]
+}
+</code></pre>
+<p>we would create a helper named <code>list</code> to generate our HTML list. The helper receives the <code>people</code> as its first parameter, and an options hash as its second parameter. The options hash contains a property named <code>fn</code>, which you can invoke with a context just as you would invoke a normal Handlebars template.</p>
+<pre><code class="lang-js">Handlebars.registerHelper(&apos;<span class="hljs-keyword">list</span>&apos;, function(items, options) {
+  <span class="hljs-keyword">var</span> <span class="hljs-keyword">out</span> = <span class="hljs-string">&quot;&lt;ul&gt;&quot;</span>;
+
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=0, <span class="hljs-keyword">l</span>=items.length; i&lt;<span class="hljs-keyword">l</span>; i++) {
+    <span class="hljs-keyword">out</span> = <span class="hljs-keyword">out</span> + <span class="hljs-string">&quot;&lt;li&gt;&quot;</span> + options.fn(items[i]) + <span class="hljs-string">&quot;&lt;/li&gt;&quot;</span>;
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">out</span> + <span class="hljs-string">&quot;&lt;/ul&gt;&quot;</span>;
+});
+</code></pre>
+<p>When executed, the template will render:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Yehuda Katz<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Carl Lerche<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Alan Johnson<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>Block helpers have more features, such as the ability to create an else section (used, for instance, by the built-in if helper).</p>
+<p>Since the contents of a block helper are escaped when you call <code>options.fn(context)</code>, Handlebars does not escape the results of a block helper. If it did, inner content would be double-escaped!</p>
+<p><a href="block_helpers.html" class="more-info" target="_blank">Learn More: Block Helpers</a></p>
+<h2>Handlebars Paths</h2>
+<p>Handlebars supports simple paths, just like Mustache.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">name</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></span>
+</code></pre>
+<p>Handlebars also supports nested paths, making it possible to look up properties nested below the current context.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>By </span><span class="hljs-expression">{{<span class="hljs-variable">author.name</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>
+    </span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>That template works with this context</p>
+<pre><code>var context = {
+  title: <span class="hljs-string">&quot;My First Blog Post!&quot;</span>,
+  author: {
+    <span class="hljs-property">id</span>: <span class="hljs-number">47</span>,
+    <span class="hljs-property">name</span>: <span class="hljs-string">&quot;Yehuda Katz&quot;</span>
+  },
+  body: <span class="hljs-string">&quot;My first post. Wheeeee!&quot;</span>
+};
+</code></pre><p>This makes it possible to use Handlebars templates with more raw JSON objects.</p>
+<p>Nested handlebars paths can also include <code>../</code> segments, which evaluate their paths against a parent context.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Comments<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;comments&quot;</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">each</span> comments</span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/posts/</span></span></span><span class="hljs-expression">{{<span class="hljs-variable">..</span><span class="hljs-end-block">/permalink</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-value">#</span></span></span><span class="hljs-expression">{{<span class="hljs-variable">id</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-value">&quot;</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">title</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">each</span></span>}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>Even though the link is printed while in the context of a comment, it can still go back to the main context (the post) to retrieve its permalink.</p>
+<p>The <code>../</code> path segment references the parent template scope, not one level up in the context. This is because block helpers can invoke a block with any context, so the notion of &quot;one level up&quot; isn&apos;t particularly meaningful except as a reference to the parent template scope.</p>
+<p>Handlebars also allows for name conflict resolution between helpers and data fields via a this reference:</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">.</span><span class="hljs-end-block">/name</span>}}</span><span class="xml"> or </span><span class="hljs-expression">{{<span class="hljs-variable">this</span><span class="hljs-end-block">/name</span>}}</span><span class="xml"> or </span><span class="hljs-expression">{{<span class="hljs-variable">this.name</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></span>
+</code></pre>
+<p>Any of the above would cause the <code>name</code> field on the current context to be used rather than a helper of the same name.</p>
+<h2>Template comments with {{!-- --}} or {{! }}.</h2>
+<p>You can use comments in your handlebars code just as you would in your code. Since there is generally some level of logic, this is a good practice.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+  </span><span class="hljs-expression">{{!<span class="hljs-variable">--</span> <span class="hljs-variable">only</span> <span class="hljs-variable">output</span> <span class="hljs-variable">this</span> <span class="hljs-variable">author</span> <span class="hljs-variable">names</span> <span class="hljs-variable"><span class="hljs-keyword">if</span></span> <span class="hljs-variable">an</span> <span class="hljs-variable">author</span> <span class="hljs-variable">exists</span> <span class="hljs-variable">--</span>}}</span><span class="xml">
+  </span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">if</span> author</span>}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">firstName</span>}}</span><span class="xml"> </span><span class="hljs-expression">{{<span class="hljs-variable">lastName</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">if</span></span>}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>The comments will not be in the resulting output. If you&apos;d like the comments to show up. Just use html comments, and they will be output.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;entry&quot;</span>&gt;</span>
+  </span><span class="hljs-expression">{{! <span class="hljs-variable">This</span> <span class="hljs-variable">comment</span> <span class="hljs-variable">will</span> <span class="hljs-variable">not</span> <span class="hljs-variable">be</span> <span class="hljs-variable"><span class="hljs-keyword">in</span></span> <span class="hljs-variable">the</span> <span class="hljs-variable">output</span> }}</span><span class="xml">
+  <span class="hljs-comment">&lt;!-- This comment will be in the output --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>Any comments that must contain <code>}}</code> or other handlebars tokens should use the <code>{{!-- --}}</code> syntax.</p>
+<h2>Helpers</h2>
+<p>Handlebars helpers can be accessed from any context in a template. You can register a helper with the <code>Handlebars.registerHelper</code> method.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>By </span><span class="hljs-expression">{{<span class="hljs-variable">fullName</span> <span class="hljs-variable">author</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Comments<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">each</span> comments</span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>By </span><span class="hljs-expression">{{<span class="hljs-variable">fullName</span> <span class="hljs-variable">author</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">body</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">each</span></span>}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span>
+</code></pre>
+<p>when using this context and helpers:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> context = {
+  author: {firstName: <span class="hljs-string">&quot;Alan&quot;</span>, lastName: <span class="hljs-string">&quot;Johnson&quot;</span>},
+  body: <span class="hljs-string">&quot;I Love Handlebars&quot;</span>,
+  comments: [{
+    author: {firstName: <span class="hljs-string">&quot;Yehuda&quot;</span>, lastName: <span class="hljs-string">&quot;Katz&quot;</span>},
+    body: <span class="hljs-string">&quot;Me too!&quot;</span>
+  }]
+};
+
+Handlebars.registerHelper(<span class="hljs-string">&apos;fullName&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(person)</span> </span>{
+  <span class="hljs-keyword">return</span> person.firstName + <span class="hljs-string">&quot; &quot;</span> + person.lastName;
+});
+</code></pre>
+<p>results in:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>By Alan Johnson<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>I Love Handlebars<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Comments<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>By Yehuda Katz<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;body&quot;</span>&gt;</span>Me Too!<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Helpers receive the current context as the <code>this</code> context of the function.</p>
+<pre><code class="lang-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-begin-block">#<span class="hljs-keyword">each</span> items</span>}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span></span><span class="hljs-expression">{{<span class="hljs-variable">agree</span>_<span class="hljs-variable">button</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  </span><span class="hljs-expression">{{<span class="hljs-end-block">/<span class="hljs-keyword">each</span></span>}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></span>
+</code></pre>
+<p>when using this context and helpers:</p>
+<pre><code class="lang-js">var context = {
+<span class="hljs-label">  items:</span> [
+    {<span class="hljs-string">name:</span> <span class="hljs-string">&quot;Handlebars&quot;</span>, <span class="hljs-string">emotion:</span> <span class="hljs-string">&quot;love&quot;</span>},
+    {<span class="hljs-string">name:</span> <span class="hljs-string">&quot;Mustache&quot;</span>, <span class="hljs-string">emotion:</span> <span class="hljs-string">&quot;enjoy&quot;</span>},
+    {<span class="hljs-string">name:</span> <span class="hljs-string">&quot;Ember&quot;</span>, <span class="hljs-string">emotion:</span> <span class="hljs-string">&quot;want to learn&quot;</span>}
+  ]
+};
+
+Handlebars.registerHelper(<span class="hljs-string">&apos;agree_button&apos;</span>, function() {
+  var emotion = Handlebars.escapeExpression(<span class="hljs-keyword">this</span>.emotion),
+      name = Handlebars.escapeExpression(<span class="hljs-keyword">this</span>.name);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Handlebars.SafeString(
+    <span class="hljs-string">&quot;&lt;button&gt;I agree. I &quot;</span> + emotion + <span class="hljs-string">&quot; &quot;</span> + name + <span class="hljs-string">&quot;&lt;/button&gt;&quot;</span>
+  );
+});
+</code></pre>
+<p>results in:</p>
+<pre><code class="lang-html"><span class="hljs-variable">&lt;ul&gt;</span>
+  <span class="hljs-variable">&lt;li&gt;</span><span class="hljs-variable">&lt;button&gt;</span>I agree. I love Handlebars<span class="hljs-variable">&lt;/button&gt;</span><span class="hljs-variable">&lt;/li&gt;</span>
+  <span class="hljs-variable">&lt;li&gt;</span><span class="hljs-variable">&lt;button&gt;</span>I agree. I enjoy Mustache<span class="hljs-variable">&lt;/button&gt;</span><span class="hljs-variable">&lt;/li&gt;</span>
+  <span class="hljs-variable">&lt;li&gt;</span><span class="hljs-variable">&lt;button&gt;</span>I agree. I want <span class="hljs-keyword">to</span> learn Ember<span class="hljs-variable">&lt;/button&gt;</span><span class="hljs-variable">&lt;/li&gt;</span>
+<span class="hljs-variable">&lt;/ul&gt;</span>
+</code></pre>
+<p>If your helper returns HTML that you do not want escaped, make sure to return a new Handlebars.SafeString.</p>
+<h2>Built-In Helpers</h2>
+<p>Handlebars offers a variety of built-in helpers such as the if conditional and each iterator.</p>
+<p><a href="builtin_helpers.html" class="more-info" target="_blank">Learn More: Built-In Helpers</a></p>
+<h2>API Reference</h2>
+<p>Handlebars offers a variety of APIs and utility methods for applications and helpers.</p>
+<p><a href="reference.html" class="more-info" target="_blank">Learn More: API Reference</a></p>
+<p></div>&lt;!-- End .contents</p>
+
         <a class="issue-tracker" href="https://github.com/nimojs/handlebarsjs.org/issues">
           发现翻译错误？告诉我们。
         </a>
@@ -72,7 +287,7 @@
     </div>
     <div id="credits"></div>
     <a href="http://github.com/nimojs/handlebarsjs.org/" id="github">
-      <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" />
+      <img alt="Fork me on GitHub" src="static/images/forkme_right_darkblue_121621.png" />
     </a>
   </body>
 </html>

@@ -619,3 +619,14 @@ Ported by Fabr铆cio Tavares de Oliveira
 .translator:before{
     content: "译者注："
 }
+hr{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 0;overflow: hidden;
+    border-bottom:1px dotted #582a00;
+}
+
+#contents ul{
+    list-style-type: disc;
+    padding-left: 1em;
+}

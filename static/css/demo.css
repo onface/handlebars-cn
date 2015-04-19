@@ -474,6 +474,9 @@ textarea#result{
   margin-bottom: 2em;
   padding:.5em;
 }
+.ui-dom em{
+  font-style: italic;
+}
 .ui-dom:before {
   content: "渲染结果预览：";
   display: block;

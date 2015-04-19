@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Handlebars 中文网：{ Handlebars 中文网：轻逻辑语义化的模板引擎 }</title>
+    <title>Handlebars 中文网：{ Handlebars 执行渲染 }</title>
     <link rel="stylesheet" href="../static/css/demo.css">
     <script src="../static/js/jquery-1.11.1.min.js"></script>
     <script src="../static/js/handlebars-v3.0.0.js"></script>
@@ -11,7 +11,7 @@
 <body>
     <div class="ui-header">
         <h1 class="ui-header-title">
-            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ Handlebars 中文网：轻逻辑语义化的模板引擎 }
+            <a href="../index.html" class="ui-header-tip">Handlebars 中文网：</a>{ Handlebars 执行渲染 }
             <span class="ui-header-more">
                 <iframe src="http://ghbtns.com/github-btn.html?user=nimojs&repo=handlebarsjs.org&type=watch&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="131" height="30"></iframe>
@@ -40,18 +40,21 @@ var template = Handlebars.compile(source);
 <script class="show">
 // 数据
 var data = {
-    "title": "Handlebars 中文网",
-    "body": "用 Handlebars 抛弃低效率的 HTML 拼接吧！"
+    title: "My New Post",
+    body: "This is my first post!"
 }
 // 渲染
 $(function () {
     var html = template(data);
     $("#result,#dom").html(html);
-
-    // 通过 pre 让 textarea 高度自适应，与 Handlebars 无关
-    $("#expandingPre").html(Handlebars.escapeExpression(html));
 })
 </script>
+
+<style>
+#expandingPre{
+    height: 200px;
+}
+</style>
 
 
 <!-- 渲染结果字符 -->

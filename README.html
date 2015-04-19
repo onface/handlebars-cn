@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Handlebars 中文网：轻逻辑语义化的模板引擎</title>
+    <meta charset="UTF-8">
+    <link href="static/stylesheets/application.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/sunburst.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/stylesheets/site.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="static/images/favicon.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        <a href="index.html">
+          <img alt="Handlebars 中文网：轻逻辑语义化的模板引擎" src="static/images/handlebars_logo.png"/>
+        </a>
+      </div>
+      <div id="contents">
+        <a href="http://www.devswag.com/collections/handlebars" id="callout">
+          <img alt="Buy Handlebars swag on DevSwag!" src="static/images/handlebars-devswag.png"/>
+        </a>
+        <h1><a href="http://www.handlebarsjs.org/" target="_blank">Handlebars &#x4E2D;&#x6587;&#x7F51;</a></h1>
+<p><a href="http://www.handlebarsjs.org" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7113820/4d7c487a-e20a-11e4-9335-53552a711137.jpg"></a></p>
+<p><a href="http://handlebarsjs.com/" target="_blank">handlebras</a> &#x5B98;&#x65B9;&#x6587;&#x6863;&#x7684;&#x4E2D;&#x6587;&#x7248;</p>
+<ul>
+<li>&#x4E2D;&#x6587;&#x7248;&#xFF1A;<a href="http://www.handlebarsjs.org/" target="_blank">http://www.handlebarsjs.org</a></li>
+<li>&#x82F1;&#x6587;&#x7248;&#xFF1A;<a href="http://www.handlebarsjs.com/" target="_blank">http://www.handlebarsjs.com</a></li>
+</ul>
+<h2>&#x76F4;&#x63A5;&#x63D0;&#x4EA4; <a href="https://github.com/nimojs/handlebarsjs.org/issues" target="_blank">issues</a> &#x62A5;&#x544A;&#x7FFB;&#x8BD1;&#x9519;&#x8BEF;</h2>
+<p>&#x6253;&#x5F00; <a href="https://github.com/nimojs/handlebarsjs.org/issues/new" target="_blank">issues</a> &#xFF0C;&#x586B;&#x5199;&#x7FFB;&#x8BD1;&#x9519;&#x8BEF;&#x5BF9;&#x5E94;&#x7684; URL &#x5730;&#x5740;&#x3001;&#x9519;&#x8BEF;&#x6587;&#x5B57;&#x3001;&#x6B63;&#x786E;&#x6587;&#x5B57;&#xFF0C;&#x539F;&#x56E0;&#x3002;</p>
+<h2>&#x4F7F;&#x7528; gulp &#x53C2;&#x4E0E;&#x7F16;&#x8F91;</h2>
+<ol>
+<li>Fork &#x6B64;&#x9879;&#x76EE;</li>
+<li>&#x4F7F;&#x7528; Github Clone &#x5230;&#x672C;&#x5730;</li>
+<li>&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;/&#x7EC8;&#x7AEF;</li>
+<li>&#x8DF3;&#x8F6C;&#x81F3;&#x5BF9;&#x5E94;&#x76EE;&#x5F55;</li>
+<li>&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x5165; <code>npm install</code></li>
+<li>&#x8F93;&#x5165; <code>gulp</code> &#x56DE;&#x8F66;</li>
+<li>&#x5F00;&#x59CB;&#x76D1;&#x63A7; <code>/post/**/*.md</code> &#x6587;&#x4EF6;&#x4FEE;&#x6539;&#xFF0C;&#x5F53; <code>*.md</code> &#x6587;&#x4EF6;&#x88AB;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x5C06;&#x81EA;&#x52A8;&#x540C;&#x6B65; &#x5BF9;&#x5E94;&#x7684; <code>/**/*.html</code> &#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<p>&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x540E;&#x4F7F;&#x7528; github &#x53D1;&#x9001; pull requests</p>
+<h3>HTML &#x7279;&#x6B8A;&#x5904;&#x7406;</h3>
+<p>&#x56E0;&#x4E3A;&#x5B98;&#x65B9;&#x82F1;&#x6587;&#x6587;&#x6863;&#x4E2D;&#x5939;&#x6742;&#x7740;&#x4E00;&#x4E9B;&#x5E26; class &#x7684; <code>&lt;div&gt;</code> &#x6240;&#x4EE5;&#x901A;&#x8FC7; replace &#x505A;&#x4E86;&#x4E00;&#x4E2A;&#x66FF;&#x6362;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!---&lt;div class=&quot;bullet&quot;&gt;--&gt;</span>
+
+Handlebars &#x6A21;&#x677F;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF; HTML &#xFF0C;Handlebars &#x8868;&#x8FBE;&#x5F0F;&#x5D4C;&#x5165;&#x5728; HTML &#x4E2D;&#x3002;
+</code></pre>
+<pre><code class="lang-js">html = html.replace(/<span class="hljs-comment">&lt;!---([^-]+)--&gt;</span>/g,&apos;$1&apos;)
+</code></pre>
+<p>&#x53EF;&#x67E5;&#x770B; <a href="https://github.com/nimojs/handlebarsjs.org/edit/master/posts/index.html" target="_blank">/posts/index.md</a> &#x7684;&#x6E90;&#x7801;&#x4EE5;&#x7406;&#x89E3; <code>&lt;!---&lt;tag&gt;--&gt;</code> &#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+
+        <a class="issue-tracker" href="https://github.com/nimojs/handlebarsjs.org/issues">
+          发现翻译错误？告诉我们。
+        </a>
+      </div>
+    </div>
+    <div id="credits"></div>
+    <a href="http://github.com/nimojs/handlebarsjs.org/" id="github">
+      <img alt="Fork me on GitHub" src="static/images/forkme_right_darkblue_121621.png" />
+    </a>
+  </body>
+</html>

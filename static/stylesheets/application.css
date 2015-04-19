@@ -15,12 +15,12 @@
 
 /* line 48 */
 html {
-  background-image: url("../../images/noise.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 750, color-stop(0%, #f7931e), color-stop(100%, #f15a24));
-  background-image: url("../../images/noise.png"), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);
-  background-image: url("../../images/noise.png"), -moz-radial-gradient(top center, #f7931e, #f15a24 750px);
-  background-image: url("../../images/noise.png"), -o-radial-gradient(top center, #f7931e, #f15a24 750px);
-  background-image: url("../../images/noise.png"), -ms-radial-gradient(top center, #f7931e, #f15a24 750px);
-  background-image: url("../../images/noise.png"), radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("../images/noise.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 750, color-stop(0%, #f7931e), color-stop(100%, #f15a24));
+  background-image: url("../images/noise.png"), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("../images/noise.png"), -moz-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("../images/noise.png"), -o-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("../images/noise.png"), -ms-radial-gradient(top center, #f7931e, #f15a24 750px);
+  background-image: url("../images/noise.png"), radial-gradient(top center, #f7931e, #f15a24 750px);
   width: 100%;
   background-color: #f7931e;
   padding-top: 10px;

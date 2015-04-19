@@ -1,6 +1,6 @@
 <!--_PAGEDATA
 {
-    "title": "Handlebars 中文网：轻逻辑语义化的模板引擎",
+    "title": "Handlebars 执行渲染",
     "github":"nimojs/handlebarsjs.org",
     "githubissuesid": 1,
     "createData": "2015-04-10",
@@ -30,16 +30,19 @@ var template = Handlebars.compile(source);
 <script class="show">
 // 数据
 var data = {
-	"title": "Handlebars 中文网",
-    "body": "用 Handlebars 抛弃低效率的 HTML 拼接吧！"
+    title: "My New Post",
+    body: "This is my first post!"
 }
 // 渲染
 $(function () {
 	var html = template(data);
 	$("#result,#dom").html(html);
-
-	// 通过 pre 让 textarea 高度自适应，与 Handlebars 无关
-	$("#expandingPre").html(Handlebars.escapeExpression(html));
 })
 </script>
+
+<style>
+#expandingPre{
+    height: 200px;
+}
+</style>
 

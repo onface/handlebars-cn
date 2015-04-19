@@ -12,26 +12,31 @@ _PAGEDATA-->
 
 <!-- 模板 -->
 <script class="show" id="source" type="text/x-handlebars-template" >
-{{{link "See more..." story.url}}}
+{{#nimo}}
+{{.}} {{root.a.b.c}}
+{{/nimo}}
 </script>
 
 <!-- 数据 -->
 <script class="show json-format-error" id="data" type="text/json">
 {
-    "story": {
-        "url": "http://www.handlebarsjs.org"
-    }
+    "a":{
+        "b":{
+            "c":"cccc"
+        }
+    },
+    "nimo": [
+        1
+        ,
+        2
+    ]
 }
 </script>        
 
 <!-- helper实现 -->
 <script class="show" id="helper">
-Handlebars.registerHelper('link', function(text, url) {
-    url = Handlebars.escapeExpression(url);
-    text = Handlebars.escapeExpression(text);
-
-    return new Handlebars.SafeString(
-        "<a href='" + url + "'>" + text + "</a>"
-    );
+Handlebars.registerHelper('helper-name', function(obj) {
+    return 'output'
+    
 });
 </script>
