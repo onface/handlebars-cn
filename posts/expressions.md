@@ -1,7 +1,7 @@
 <!--_PAGEDATA
 {
     "title": "Handlebars 中文网：轻逻辑语义化的模板引擎",
-    "github":"nimojs/handlebarsjs.org",
+    "github":"onface/handlebars-cn",
     "githubissuesid": 1,
     "createData": "2015-04-10",
     "keywords": "",
@@ -234,7 +234,7 @@ Handlebars.registerHelper('link', function(text, options) {
 最终渲染结果：
 
 ```
-<a class="story" href="http://handlebarsjs.org">See more...</a>
+<a class="story" href="http://http://handlebars-cn.onface.live/">See more...</a>
 ```
 
 <!---</div>-->

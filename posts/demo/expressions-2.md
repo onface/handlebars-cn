@@ -23,7 +23,7 @@ _PAGEDATA-->
 {
     "story": {
         "text": "Handlebars 中文网",
-        "url": "http://www.handlebarsjs.org"
+        "url": "http://handlebars-cn.onface.live/"
     }
 }
 

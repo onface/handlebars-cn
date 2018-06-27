@@ -19,7 +19,7 @@ _PAGEDATA-->
 <script class="show json-format-error" id="data" type="text/json">
 {
     "story": {
-        "url": "http://www.handlebarsjs.org"
+        "url": "http://handlebars-cn.onface.live/"
     }
 }
 </script>        

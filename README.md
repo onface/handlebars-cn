@@ -1,15 +1,15 @@
-[Handlebars 中文网](http://www.handlebarsjs.org/)
+[Handlebars 中文网](http://handlebars-cn.onface.live//)
 ================
 
-<a href="http://www.handlebarsjs.org" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7113820/4d7c487a-e20a-11e4-9335-53552a711137.jpg"/></a>
+<a href="http://handlebars-cn.onface.live/" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3949015/7113820/4d7c487a-e20a-11e4-9335-53552a711137.jpg"/></a>
 
 [handlebras](http://handlebarsjs.com/) 官方文档的中文版
 
-- 中文版：[http://www.handlebarsjs.org](http://www.handlebarsjs.org/)
+- 中文版：[http://handlebars-cn.onface.live/](http://handlebars-cn.onface.live//)
 - 英文版：[http://www.handlebarsjs.com](http://www.handlebarsjs.com/)
 
-## 直接提交 [issues](https://github.com/nimojs/handlebarsjs.org/issues) 报告翻译错误
-打开 [issues](https://github.com/nimojs/handlebarsjs.org/issues/new) ，填写翻译错误对应的 URL 地址、错误文字、正确文字，原因。
+## 直接提交 [issues](https://github.com/onface/handlebars-cn/issues) 报告翻译错误
+打开 [issues](https://github.com/onface/handlebars-cn/issues/new) ，填写翻译错误对应的 URL 地址、错误文字、正确文字，原因。
 
 ## 使用 gulp 参与编辑
 
@@ -36,4 +36,4 @@ Handlebars 模板看起来很像 HTML ，Handlebars 表达式嵌入在 HTML 中�
 html = html.replace(/<!---([^-]+)-->/g,'$1')
 ```
 
-可查看 [/posts/index.md](https://github.com/nimojs/handlebarsjs.org/edit/master/posts/index.md) 的源码以理解 `<!---<tag>-->` 的用法。
+可查看 [/posts/index.md](https://github.com/onface/handlebars-cn/edit/master/posts/index.md) 的源码以理解 `<!---<tag>-->` 的用法。

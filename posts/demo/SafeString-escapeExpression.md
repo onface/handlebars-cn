@@ -28,7 +28,7 @@ _PAGEDATA-->
 
 {
     "story": {
-        "link": "http://handlebarsjs.org/demo/SafeString-escapeExpression.html",
+        "link": "http://http://handlebars-cn.onface.live//demo/SafeString-escapeExpression.html",
         "text": "字符转义和数据安全性 <span onclick='javascript:alert(1);'>点击我</span>"
     }
 }

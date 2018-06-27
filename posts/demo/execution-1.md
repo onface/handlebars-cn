@@ -1,7 +1,7 @@
 <!--_PAGEDATA
 {
     "title": "Handlebars 执行渲染",
-    "github":"nimojs/handlebarsjs.org",
+    "github":"onface/handlebars-cn",
     "githubissuesid": 1,
     "createData": "2015-04-10",
     "keywords": "",

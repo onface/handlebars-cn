@@ -12,7 +12,7 @@ _PAGEDATA-->
 
 <!-- 模板 -->
 <script class="show" id="source" type="text/x-handlebars-template" >
-{{{link "<em>html</em>" "http://www.handlebarsjs.org"}}}
+{{{link "<em>html</em>" "http://handlebars-cn.onface.live/"}}}
 </script>
 
 <!-- 数据 -->
